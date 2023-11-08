@@ -1,0 +1,19 @@
+import * as React from 'react';
+import Svg, {Path} from 'react-native-svg';
+
+export function SearchIcon({size = 25, color = '#fff'}: SearchIconProps) {
+  return (
+    <Svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0,0,256,256"
+      width={size}
+      height={size}>
+      <Path
+        d="M21 3C11.602 3 4 10.602 4 20s7.602 17 17 17c3.355 0 6.46-.984 9.094-2.656l12.281 12.281 4.25-4.25L34.5 30.281C36.68 27.421 38 23.88 38 20c0-9.398-7.602-17-17-17zm0 4c7.2 0 13 5.8 13 13s-5.8 13-13 13S8 27.2 8 20 13.8 7 21 7z"
+        transform="scale(5.12)"
+        fill={color}
+        strokeMiterlimit={10}
+      />
+    </Svg>
+  );
+}
